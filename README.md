@@ -1,3 +1,1 @@
 # Licenta
-
-Zuzu este Oaie
