@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:context=".MainActivity">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#ff5b04"
+        android:id="@+id/topView"/>
+
+    <TextView
+        android:text="@string/tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff5b04"
+        android:id="@+id/view"/>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:actionViewClass="android.widget.SearchView"
+        android:iconifiedByDefault="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:showAsAction="collapseActionView"
+        android:focusable="false"
+        android:layout_below="@+id/textView">
+
+    </SearchView>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchView"
+        android:layout_above="@+id/view"/>
+
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home"
+        android:background="@null"
+        android:layout_below="@+id/listView"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/star"
+        android:background="@null"
+        android:layout_below="@+id/listView"
+        android:layout_toLeftOf="@+id/imageButton3"
+        android:layout_toStartOf="@+id/imageButton3"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cart"
+        android:background="@null"
+        android:layout_below="@+id/listView"
+        android:layout_toLeftOf="@+id/imageButton4"
+        android:layout_toStartOf="@+id/imageButton4"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton4"
+        android:scaleType="fitCenter"
+        android:src="@drawable/profile"
+        android:background="@null"
+        android:layout_below="@+id/listView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
